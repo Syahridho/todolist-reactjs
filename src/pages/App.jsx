@@ -63,7 +63,7 @@ const App = () => {
   return (
     <div className="max-w-lg mx-auto ">
       <div className="p-6 bg-white ring-1 ring-gray-950/5 mb-4 rounded-b-xl sticky top-0 shadow-md">
-        <h1 className="text-3xl font-bold mb-4">CRUD</h1>
+        <h1 className="text-3xl font-bold mb-4">To Do List</h1>
         <form className="flex justify-between gap-4" onSubmit={handleCreate}>
           <Input name="search" className="shadow-sm" value={newData.name} />
           <Button variant="bg-slate-800" className="w-1/5" type="submit">
