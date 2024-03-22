@@ -6,13 +6,15 @@ import ModalDelete from "../components/Fragments/ModalDelete";
 import ModalUpdate from "../components/Fragments/ModalUpdate";
 
 const App = () => {
-  const [datas, setDatas] = useState(JSON.parse(localStorage.getItem("notes")));
+  const [datas, setDatas] = useState(
+    JSON.parse(localStorage.getItem("todolist"))
+  );
   const [newData, setNewData] = useState({});
   const [deleteUser, setDeleteUser] = useState({});
   const [updateUser, setUpdateUser] = useState({});
 
   useEffect(() => {
-    localStorage.setItem("notes", JSON.stringify(datas));
+    localStorage.setItem("todolist", JSON.stringify(datas));
   }, [datas]);
 
   const handleCreate = (event) => {
